@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="google" content="notranslate"> <!--Stop google translate from offering to translate from German(?). Possibly temporary.-->
+
+<head>
+    <!-- Font awesome (For logos)  -->
+    <script src="https://kit.fontawesome.com/ab68e071ce.js"></script>
+    <script src="https://kit.fontawesome.com/d0ec7b5e29.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/images/avatar_transparent_large.png" sizes="32x32" type="image/png"/>
+    <style>
+        .container {
+            display: block;
+            text-align: center;
+            margin: 4% auto auto;
+        }
+
+
+        .img {
+            border-radius: 25%;
+            display: block;
+            margin: -1.5% auto 2%;
+            width: 20%;
+            filter: drop-shadow(0 0 0.25rem);
+        }
+
+        .modal {
+            display: inline-table;
+        }
+
+        .modal.icon {
+            padding: 0px;
+            color: #d4af37;
+        }
+
+        .modal.icon:hover i {
+            filter: brightness(85%);
+        }
+
+        .fa-gradient {
+            background: linear-gradient(165deg, rgba(212, 175, 55, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(241, 175, 9, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg {
+            background: url("./assets/images/background.png");
+            -webkit-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+    <title>ACK DRY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+    <a style="font-size: 64px; color: aliceblue; font-family: 'Courier New',serif"><b>ACK | DRY</b></a>
+    <br>
+    <a b style="font-size: 32px; color: aliceblue; font-family: 'Courier New',serif"> <b> Mobile Hair Services </b></a>
+    <h1> </h1>
+    <br>
+    <img src="assets/images/ackdry-logo.jpg" class="img"/>
+    <div class="modal">
+        <div>
+            <a class="modal icon " href="https://instagram.com/ack.dry">
+                <i class="fab fa-instagram fa-gradient fa-1x"> @ack.dry</i>
+            </a>
+        </div>
+        <br>
+        <div class="modal">
+            <a class="modal icon">
+                <i class="fa-solid fa-address-book fa-gradient fa-1x"> 781-853-7845</i>
+            </a>
+        </div>
+        <br>
+        <br> <!-- idk why I had to do this twice -->
+        <div class="modal">
+            <a class="modal icon">
+                <i class="fa-regular fa-envelope fa-gradient fa-1x"> ack.drymobile@gmail.com</i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="bg"></div>
+</body>
+
+</html>
